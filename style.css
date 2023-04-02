@@ -1,0 +1,52 @@
+body {
+  background-color: #36393F;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #5865F2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5865F2;
+}
+
+.dark-mode {
+  background-color: #ffffff;
+  color:  #36393F;
+}
+
+.dark-mode button {
+  background-color: #5865F2;
+}
+
+.dark-mode button:hover {
+  background-color: #5865F2;
+}
+
+.container {
+  width: 500px;
+  height: 310px;
+  position: relative;
+  left: 500px;
+  text-align: center;
+  border-radius: 4px;
+  top: 190px;
+}
