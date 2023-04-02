@@ -1,4 +1,4 @@
-body {
+			body {
   background-color: #36393F;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
@@ -49,4 +49,69 @@ button:hover {
   text-align: center;
   border-radius: 4px;
   top: 190px;
+}
+@media only screen and (max-width: 600px) {
+  /* Styles for mobile devices */
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    position: static;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    padding: 2rem;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto; /* center horizontally */
+  }
+  
+  button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #5865F2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1200px), (max-height: 700px) {
+  /* Styles for smaller screens */
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    position: static;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    padding: 2rem;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto; /* center horizontally */
+  }
+  
+  button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #5865F2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
 }
