@@ -1,117 +1,44 @@
-			body {
-  background-color: #36393F;
-  color: #FFFFFF;
-  font-family: Arial, sans-serif;
-}
+    /* Default style for the page */
+    body {
+      background-color: #ffffff; /* White background */
+      color: #000000; /* Black text */
+      font-family: Arial, sans-serif;
+      font-size: 1.7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Move content to top */
+      align-items: center;
+      height: 100vh;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
 
-h1 {
-  font-size: 3rem;
-  margin-top: 3rem;
-}
+    /* Dark theme style */
+    body.dark {
+      background-color: #36393f; /* Dark gray background */
+      color: #ffffff; /* White text */
+    }
 
-p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
+    /* Discord logo */
+    .discord-logo {
+      background:('/discord-logo-blue.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
 
-button {
-  padding: 1rem;
-  font-size: 1.5rem;
-  background-color: #5865F2;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
+    p {
+        font-size: 1.5rem;
+    }
+    /* Theme switch button */
+    .theme-switch {
+      background-color: #5865F2;
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-button:hover {
-  background-color: #5865F2;
-}
-
-.dark-mode {
-  background-color: #ffffff;
-  color:  #36393F;
-}
-
-.dark-mode button {
-  background-color: #5865F2;
-}
-
-.dark-mode button:hover {
-  background-color: #5865F2;
-}
-
-.container {
-  width: 500px;
-  height: 310px;
-  position: relative;
-  left: 500px;
-  text-align: center;
-  border-radius: 4px;
-  top: 190px;
-}
-@media only screen and (max-width: 600px) {
-  /* Styles for mobile devices */
-  h1 {
-    font-size: 1.5rem;
-  }
-  
-  .container {
-    position: static;
-    text-align: center;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    width: auto;
-    height: auto;
-    top: auto;
-    left: auto;
-    padding: 2rem;
-    border-radius: 4px;
-    border: none;
-    margin: 0 auto; /* center horizontally */
-  }
-  
-  button {
-    padding: 1rem;
-    font-size: 1.5rem;
-    background-color: #5865F2;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 2rem;
-  }
-}
-
-@media only screen and (max-width: 1200px), (max-height: 700px) {
-  /* Styles for smaller screens */
-  h1 {
-    font-size: 1.5rem;
-  }
-  
-  .container {
-    position: static;
-    text-align: center;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    width: auto;
-    height: auto;
-    top: auto;
-    left: auto;
-    padding: 2rem;
-    border-radius: 4px;
-    border: none;
-    margin: 0 auto; /* center horizontally */
-  }
-  
-  button {
-    padding: 1rem;
-    font-size: 1.5rem;
-    background-color: #5865F2;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 2rem;
-  }
-}
+/* I add comments so that I can understand what I did where in future if I will ever choose to make changes so don't really judge me for it  */
