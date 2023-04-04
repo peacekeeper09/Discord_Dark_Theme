@@ -1,44 +1,62 @@
-    /* Default style for the page */
-    body {
-      background-color: #ffffff; /* White background */
-      color: #000000; /* Black text */
-      font-family: Arial, sans-serif;
-      font-size: 1.7rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; /* Move content to top */
-      align-items: center;
-      height: 100vh;
-      transition: background-color 0.5s ease, color 0.5s ease;
-    }
+/* Default style for the page */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center content vertically */
+  align-items: center;
+  height: 100%;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
-    /* Dark theme style */
-    body.dark {
-      background-color: #36393f; /* Dark gray background */
-      color: #ffffff; /* White text */
-    }
+/* Dark theme style */
+body.dark {
+  background-color: #36393f;
+  color: #ffffff;
+}
 
-    /* Discord logo */
-    .discord-logo {
-      background:('/discord-logo-blue.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 150px;
-      height: 150px;
-      margin-bottom: 20px;
-    }
+/* Discord logo */
+.discord-logo {
 
-    p {
-        font-size: 1.5rem;
-    }
-    /* Theme switch button */
-    .theme-switch {
-      background-color: #5865F2;
-      color: #ffffff;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
 
-/* I add comments so that I can understand what I did where in future if I will ever choose to make changes so don't really judge me for it  */
+/* Adjust font size and center text/button */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .container {
+    text-align: center;
+  }
+  .theme-switch {
+    margin-top: 20px;
+  }
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Theme switch button */
+.theme-switch {
+  background-color: #5865F2;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
